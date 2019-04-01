@@ -1,0 +1,71 @@
+
+body {
+  /* 画面幅に合った余白を追加 */
+  padding: calc(100vw/6) calc(100vw/8);
+  /* GoogleFontsより */
+  font-family: 'PT Sans', 'M PLUS 1p', sans-serif;
+  color: rgb(75, 75, 75);
+}
+
+h1 {
+  /* 画面幅に合わせてフォントサイズを変更 */
+  font-size: calc(0.8em + 2.6vw);
+}
+
+h1[id^='show'] {
+  color: rgb(226, 88, 45);
+  font-weight: bold;
+  word-wrap: break-word;
+}
+
+h1[id^='show']::before {
+  content: "NowSize： ";
+  color: rgb(75, 75, 75);
+  font-weight: normal;
+}
+
+.row {
+  background-color: rgb(245, 245, 245);
+  border-radius: 8px;
+}
+
+.row > div {
+  padding: 15px;
+}
+
+.row > div > div {
+  height: 100px;
+  border-radius: 6px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .12), 0 2px 2px 0 rgba(0, 0, 0, .24);
+}
+
+.row div:nth-child(1) div {
+  background-color: rgb(66, 120, 168);
+}
+
+.row div:nth-child(2) div {
+  background-color: antiquewhite;
+}
+
+.row div:nth-child(3) div {
+  background-color: rgb(35, 236, 236);
+}
+
+.row div:nth-child(4) div {
+  background-color: rgb(60, 60, 211);
+}
+
+.row div:nth-child(5) div {
+  background-color: rgb(132, 238, 26);
+}
+
+.row div:nth-child(6) div {
+  background-color: gold;
+}
+
+.row > div > div:hover {
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, .14), 0 1px 10px 0 rgba(0, 0, 0, .12), 0 2px 4px -1px rgba(0, 0, 0, .2);
+  cursor: pointer;
+  opacity: 0.7;
+  transform: scale(1.02);
+}

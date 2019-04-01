@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Bootstrap4の読み込み -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  
+  <!-- オリジナルのCSSを読み込み -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Googleが提供しているフォントを読み込む -->
+  <link href="https://fonts.googleapis.com/css?family=M+PLUS+1p|PT+Sans" rel="stylesheet">
+  
+  <title>Bootstrapサンプル</title>
+</head>
+<body>
+
+  <h1>Bootstrap4 レスポンシブ サンプル</h1>
+
+  <!-- 表示・非表示の切り替えはBootstrapのリファレンスを参考 -->
+  <!-- https://cccabinet.jpn.org/bootstrap4/utilities/display -->
+  <h1 id="show_xs" class="d-sm-none">col-* ~575px スマホ・組み込み機器</h1>
+  <h1 id="show_sm" class="d-none d-sm-block d-md-none">col-sm-* 576px~767px ファブレット</h1>
+  <h1 id="show_md" class="d-none d-md-block d-lg-none">col-md-* 768px~991px タブレット</h1>
+  <h1 id="show_lg" class="d-none d-lg-block d-xl-none">col-lg-* 992px~1199px ノートPC・小モニタ</h1>
+  <h1 id="show_xl" class="d-none d-xl-block">col-xl-* 1200px~ テレビ・大モニタ</h1>
+
+  <!-- 
+    Bootstrapのレイアウトは5段階で認識されている！
+    col-*    ~575px       スマホ・組み込み機器
+    col-sm-* 576px~767px  ファブレット
+    col-md-* 768px~991px  タブレット
+    col-lg-* 992px~1199px ノートPC・小モニタ
+    col-xl-* 1200px~      テレビ・大モニタ
+   -->
+
+  <div class="row">
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+    <div class="col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2">
+      <div></div>
+    </div>
+    
+  </div>
+
+</body>
+</html>
